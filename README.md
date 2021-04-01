@@ -93,7 +93,7 @@ print(str:toLowerCase()) -- use the power of js in lua
 
 ```
 
-# Number
+## Number
 
 ```lua
 local jsp = require("./jspower.lua")
@@ -108,3 +108,13 @@ print(Number.isNaN(Number.NaN)) -- true
 print(Number.isFinite(jsp.Infinity)) -- false
 print(Number.isFinite(3.33333)) -- true
 ```
+
+# Disclaimer
+
+This project is not thoroughly tested against each and every edge-cases, and may not produce consistent result with a real JavaScript engine.
+
+However, if you did find any such inconsistency, please report by opening an issue! Any contribution is appreciated!
+
+# Unsupported Features
+
+RegEx, locale, UTF-16 related (due to lack of native support) functionalities
